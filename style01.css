@@ -1,0 +1,376 @@
+/*******************
+全体の初期設定
+*******************/
+body {
+	font-family: "open sans", "noto sans jp", Roboto, sans-serif;
+	color: #333;
+	font-size: 100%;
+	/*16pt標準*/
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	/* 画面幅が小さくなっても画像がはみ出さない*/
+	height: auto;
+	vertical-align: bottom;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+/*******************
+header
+*******************/
+header {
+	background-color: #000000B0;
+	height: 70px;
+	padding: 10px 0;
+	/* sticky header */
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	color: #fff;
+}
+
+.header-logo p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 50px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+nav,nav p, .button-blue-square a {
+	font-size: 1rem;
+}
+.header-menu li {
+	padding-right: 20px;
+}
+
+.header-menu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.phone-container {
+	display: flex;
+	align-items: center;
+}
+
+.fa-phone-volume {
+	padding-right: 0.8rem;
+	margin: 0;
+}
+
+.button-blue-square a {
+	background-color: #304ffe;
+	color: #fff;
+	padding: 12px 11px;
+	text-decoration: none;
+	border-radius: 2px;
+}
+
+.button-blue-square a:hover {
+	background-color: #1537FB;
+}
+
+/*******************
+hero-image
+*******************/
+.hero-img {
+	background-image: url(img/dog-Hero.jpg);
+	background-repeat: none;
+	background-size: cover;
+	height: 100vh;
+}
+
+.catchcopy {
+	font-size: 3.2rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.2rem;
+	padding-top: 200px;
+	margin-bottom: 24px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 40px;
+}
+
+.hero-img a {
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 15px 30px;
+}
+
+
+/*******************
+about & heading style
+*******************/
+.heading-style {
+	display: flex;
+	justify-content: left;
+	align-items: baseline;
+	/*下揃え*/
+	padding-top: 100px;
+	padding-bottom: 60px;
+} 
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #212121;
+	letter-spacing: 0.1rem;
+	position: relative;
+	/*下線をつけるため*/
+	margin-bottom: 0;
+}
+
+h2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	/* 線の位置を調整 */
+	height: 4px;
+	/* 線の厚さ */
+	background: #304ffe;
+	/* 線の色 */
+	width: 60px;
+	/* 線の長さ */
+}
+
+.h2-sub {
+	font-size: 1.5rem;
+	/*24px */
+	font-weight: 700;
+	color: #212121;
+	letter-spacing: 0.1rem;
+	padding-left: 2rem;
+}
+
+.main-text {
+	font-size: 1.2rem;
+	color: #424242;
+	letter-spacing: 0.02em;
+	line-height: 2rem;
+}
+
+/*******************
+service
+*******************/
+#service ul {
+	padding: 2em 0 2em 0;
+}
+
+#service ul li {
+	font-size: 1.2rem;
+}
+
+.service-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.service-card {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: left;
+	width: 48%;
+	flex-wrap: nowrap;
+	padding-bottom: 1.6em;
+}
+
+.service-card img {
+	width: 100%;
+	max-height: 400px;
+	height: auto;
+}
+
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 25px 0 10px;
+	letter-spacing: 0.1rem;
+}
+
+.service-card p {
+	font-size: 1.1rem;
+	line-height: 1.8em;
+}
+
+/*******************
+お客様の声
+*******************/
+.testimonial-card .main-text {
+	padding: 1.8em 0 2.8em;
+}
+
+/*******************
+access
+*******************/
+/* need embded Google Map */
+.access-map {
+	width: 100vw;
+	height: auto;
+}
+
+.access-map iframe {
+	width: 100%;
+}
+
+/*******************
+contact
+*******************/
+/* need contact form */
+#contact {
+	margin-top: 80px;
+	background-image: url(img/dog-contact.jpg);
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	
+}
+
+.h3-white {
+	font-size: 2.5rem;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.contact-form {
+	width: 500px;
+	padding: 0 20px;
+	margin: 0 auto;
+	color: white;
+	}
+
+.contact-form label {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 1rem;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.contact-form textarea {
+	height: 10rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	/* outline: none; 既存のアウトラインを削除 */
+	border: 4px solid grey;
+	/* グレーの枠線を追加 */
+}
+
+.contact-form input[type="submit"] {
+	background-color: #304ffe;
+	border: none;
+	/* color: #fff; */
+	border-radius: 20px;
+
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	padding: 12px auto;
+}
+
+/*******************
+footer
+*******************/
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 50px 40px;
+}
+
+.footer-phone {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.footer-phone li {
+	padding-right: 2em;
+}
+
+/*******************
+responsive @
+*******************/
+@media screen and (max-width: 6680px) {
+	.nav {
+		display: inline-block;
+	}
+
+	.service-details {
+		flex-direction: column;
+	}
+
+	.service-card,
+	.service-card img {
+		width: 100%;
+		height: auto;
+		/* 写真の縦横比を保って幅いっぱいに表示 */
+		object-fit: cover;
+	}
+
+	.service-card p {
+		padding-bottom: 2em;
+	}
+
+	.footer-flex {
+		flex-direction: column;
+	}
+
+	.footer-phone {
+		padding-bottom: 2em;
+	}
+}
