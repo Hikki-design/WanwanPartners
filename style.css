@@ -1,6 +1,7 @@
 /*******************
 全体の初期設定
 *******************/
+
 body {
 	font-family: "open sans", "noto sans jp", Roboto, sans-serif;
 	color: #333;
@@ -34,27 +35,14 @@ ul {
 header
 *******************/
 header {
-	background-color: #000000B0;
-	height: 70px;
-	padding: 10px 0;
+	background-color:  #024c30b0;
+	height: auto;
+	padding: 10px 0 10px;
 	/* sticky header */
-	position: fixed;
+	position: sticky;
 	top: 0;
+	z-index: 999;
 	width: 100%;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
-	color: #fff;
-}
-
-.header-logo p {
-	font-size: 18px;
-	font-weight: bold;
-	margin-right: 50px;
 }
 
 .header-menu {
@@ -62,40 +50,81 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
+	color: #fff;
+	padding-bottom: 1rem;
 }
 
-nav,nav p, .button-blue-square a {
-	font-size: 1rem;
-}
-.header-menu li {
+.header-menu, .header-contact{
 	padding-right: 20px;
 }
 
-.header-menu a {
+.header-logo {
+	/* width: 270px; */
+}
+
+.top-logo {
+	font-size: 20px;
+	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
+	margin-right: 50px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+nav p,
+.button-blue-square a {
+	font-size: 1rem;
+}
+
+.menu li {
+	padding-left: 20px;
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-contact {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	padding-bottom: 10px;
 }
 
 .phone-container {
 	display: flex;
 	align-items: center;
+	color: #fff;
 }
-
+.phone-container p{
+padding-right: 20px;
+}
 .fa-phone-volume {
 	padding-right: 0.8rem;
 	margin: 0;
 }
 
-.button-blue-square a {
-	background-color: #304ffe;
-	color: #fff;
+.button-square a {
+	background-color:
+	#eba082;
+	color: #282323;
+	font-weight: 700;
 	padding: 12px 11px;
 	text-decoration: none;
-	border-radius: 2px;
+	border-radius: 5px;
+	
 }
 
-.button-blue-square a:hover {
-	background-color: #1537FB;
+.button-square a:hover {
+	background-color: #61894c;
 }
 
 /*******************
@@ -126,7 +155,7 @@ h1 {
 
 .hero-img a {
 	font-size: 1.1rem;
-	font-weight: 500;
+	font-weight: 700;
 	padding: 15px 30px;
 }
 
@@ -141,7 +170,7 @@ about & heading style
 	/*下揃え*/
 	padding-top: 100px;
 	padding-bottom: 60px;
-} 
+}
 
 h2 {
 	font-size: 2rem;
@@ -161,8 +190,8 @@ h2:after {
 	/* 線の位置を調整 */
 	height: 4px;
 	/* 線の厚さ */
-	background: #304ffe;
-	/* 線の色 */
+	background: #024c30b0;
+	/* 線の色 #304ffe*/
 	width: 60px;
 	/* 線の長さ */
 }
@@ -186,12 +215,19 @@ h2:after {
 /*******************
 service
 *******************/
+#service{
+	background-color: #e1f1ebb0;
+}
 #service ul {
-	padding: 2em 0 2em 0;
+	/* padding: 2em 2em 2em 0; */
+	list-style-position: inside; /* デフォルト値、明示的に設定 */
+  padding: 2em 0 2em 1.6em; /* リストのパディングをリセット */
 }
 
 #service ul li {
 	font-size: 1.2rem;
+	list-style-type: square;
+	padding-left: 0; /* リストアイテムにパディングを適用 */
 }
 
 .service-details {
@@ -263,7 +299,7 @@ contact
 	background-position: center;
 	height: 100vh;
 	position: relative;
-	
+
 }
 
 .h3-white {
@@ -279,7 +315,7 @@ contact
 	padding: 0 20px;
 	margin: 0 auto;
 	color: white;
-	}
+}
 
 .contact-form label {
 	font-size: 1rem;
@@ -310,15 +346,20 @@ contact
 }
 
 .contact-form input[type="submit"] {
-	background-color: #304ffe;
+	background-color:#eba082;
+	/* background-color:#508370; */
+	/* background-color:#60aa8e; */
 	border: none;
-	/* color: #fff; */
 	border-radius: 20px;
 
 	font-size: 18px;
 	font-weight: 700;
-	color: #fff;
+	color: #282323;
 	padding: 12px auto;
+}
+
+.contact-form input a:hover {
+	background-color: #98b688;
 }
 
 /*******************
@@ -343,11 +384,23 @@ footer
 }
 
 /*******************
-responsive @
+responsive @586
 *******************/
-@media screen and (max-width: 6680px) {
-	.nav {
-		display: inline-block;
+@media screen and (max-width: 620px) {
+
+	nav,
+	nav p,
+	.button-blue-square a {
+		font-size: 0.9rem;
+	}
+
+	.header-menu {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.top-logo{
+		margin: 0 auto;
 	}
 
 	.service-details {
