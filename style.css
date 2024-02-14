@@ -1,14 +1,13 @@
 /*******************
 全体の初期設定
 *******************/
-
 body {
 	font-family: "open sans", "noto sans jp", Roboto, sans-serif;
 	color: #333;
 	font-size: 100%;
 	/*16pt標準*/
 	display: block;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	box-sizing: border-box;
 }
 
@@ -49,6 +48,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 	height: 100%;
 	color: #fff;
 	padding-bottom: 1rem;
@@ -113,6 +113,9 @@ padding-right: 20px;
 }
 
 .button-square a {
+	/* background-color: #304ffe; */
+	/* background-color: #1f8e37; */
+	/* background-color: #5aa532; */
 	background-color:
 	#eba082;
 	color: #282323;
@@ -124,6 +127,7 @@ padding-right: 20px;
 }
 
 .button-square a:hover {
+	/* background-color: #1537FB; */
 	background-color: #61894c;
 }
 
@@ -311,7 +315,7 @@ contact
 }
 
 .contact-form {
-	width: 500px;
+	width: 60%;
 	padding: 0 20px;
 	margin: 0 auto;
 	color: white;
@@ -359,6 +363,7 @@ contact
 }
 
 .contact-form input a:hover {
+	/* background-color: #1537FB; */
 	background-color: #98b688;
 }
 
@@ -388,9 +393,20 @@ responsive @586
 *******************/
 @media screen and (max-width: 620px) {
 
+	.catchcopy {
+		font-size: 3rem;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 0.1rem;
+		line-height: 1.1;
+		padding-top: 120px;
+		margin-bottom: 20px;
+	}
+	
+
 	nav,
 	nav p,
-	.button-blue-square a {
+	.button-square a {
 		font-size: 0.9rem;
 	}
 
@@ -399,6 +415,10 @@ responsive @586
 		justify-content: center;
 	}
 
+	.header-logo {
+		/* padding: 0; */
+		
+	}
 	.top-logo{
 		margin: 0 auto;
 	}
@@ -425,5 +445,13 @@ responsive @586
 
 	.footer-phone {
 		padding-bottom: 2em;
+	}
+
+	.h3-white {
+		font-size: 2rem;
+		padding-top: 50px;
+	}
+	.contact-form {
+		width: 80%;
 	}
 }
