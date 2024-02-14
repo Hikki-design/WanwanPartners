@@ -4,9 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dog Training Service site STUDIO to HTML practice">
-  <meta name="robots" content="noindex, nofollow">
-
+  <meta name="description" content="Dog Training Service site HTML practice">
   <title>Wanwan Partners</title>
 
   <!-- Googleフォントの利用 -->
@@ -21,6 +19,7 @@
       scroll-behavior: smooth;
     }
   </style>
+  <!-- アイコンを利用するため -->
   <script src="https://kit.fontawesome.com/ef99ef7e94.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,28 +27,34 @@
   <!-- header menu -->
   <header>
     <nav class="wrapper">
-      <div class="header-logo">
-        <p>わんわんパートナーズ</p>
+      <div class="header-menu">
+        <div class="header-logo">
+          <a href="#top" class="top-logo">わんわんパートナーズ</a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#about">事業紹介</a></li>
+          <li><a href="#service">サービス内容</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
       </div>
-      <ul class="header-menu">
-        <li><a href="#about">事業紹介</a></li>
-        <li><a href="#service">サービス内容</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
-      <div class="phone-container">
-        <!-- icon font awesome -->
-        <i class="fa-solid fa-phone-volume" style="color: #fcfcfc;"></i>
-        <p>03-1230-5566</p>
-      </div>
-      <div class="button-blue-square">
-        <a href="#contact">お問い合わせ</a>
+
+      <div class="header-contact">
+        <div class="phone-container">
+          <!-- icon font awesome -->
+          <i class="fa-solid fa-phone-volume" style="color: #fcfcfc;"></i>
+          <p>03-1230-5566</p>
+        </div>
+        <div class="button-square">
+          <a href="#contact">お問い合わせ</a>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
     <!-- Hero-image section -->
-    <section class="hero-img">
+    <section class="hero-img" id="top"><!-- 画面トップへのアンカー -->
       <div class="wrapper">
         <p class="catchcopy">
           犬のしつけのプロが<br>
@@ -59,7 +64,7 @@
           東京都にある犬のトレーニングセンター<br>
           「わんわんパートナーズ」
         </h1>
-        <div class="button-blue-square">
+        <div class="button-square">
           <a href="#contact">まずは相談してみる</a>
         </div>
       </div><!-- end of wrapper -->
@@ -90,15 +95,15 @@
         <p class="h2-sub">サービス内容</p>
       </div>
       <p class="main-text">
-        わんわんパートナーズでは以下のしつけとトレーニングを提供します。<br>
+        わんわんパートナーズでは以下のトレーニングとサービスを提供します。<br>
       </p>
       <ul>
-        <li>&#9678;基本的なしつけ訓練</li>
-        <li>◎問題行動の矯正</li>
-        <li>◎しつけ教室ワークショップの提供</li>
-        <li>◎パピークラスの開催</li>
-        <li>◎お散歩サービス</li>
-        <li>◎ドッグシッターサービス</li>
+        <li>基本的なしつけ訓練</li>
+        <li>問題行動の矯正</li>
+        <li>しつけ教室ワークショップの提供</li>
+        <li>パピークラスの開催</li>
+        <li>お散歩サービス</li>
+        <li>ドッグシッターサービス</li>
       </ul>
       <div class="service-details">
         <div class="service-card">
@@ -166,7 +171,7 @@
     </section>
 
     <section id="contact">
-      <h3 class="h3-white">お問合せはこちらから</h3>
+      <h3 class="h3-white">お問い合わせはこちらから</h3>
 
       <!-- お問合せフォーム -->
       <div class="contact-form">
@@ -182,7 +187,7 @@
           <textarea id="message" required>
         </textarea>
 
-          <input type="submit" name="submit-button" value="送信">
+          <input type="submit" name="submit-button" value="送 信">
         </form>
       </div>
     </section>
@@ -191,8 +196,8 @@
   <footer>
     <div class="footer-flex wrapper">
       <ul class="footer-phone">
-        <li> TEL: 03-1230-5566</li>
-        <li> FAX: 03-1230-5555</li>
+        <li> TEL: 03-1230-xxxx</li>
+        <li> FAX: 03-1230-xxxx</li>
       </ul>
 
       <p>©2024 わんわんパートナーズ All Rights Reserved.</p>
