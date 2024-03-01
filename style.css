@@ -395,7 +395,7 @@ responsive @586
 @media screen and (max-width: 620px) {
 
 	.hero-img {
-		height: 400px;
+		height: 650px;
 	}
 	.catchcopy {
 		font-size: 3rem;
