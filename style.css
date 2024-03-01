@@ -138,6 +138,7 @@ hero-image
 	background-image: url(img/dog-Hero.jpg);
 	background-repeat: none;
 	background-size: cover;
+	background-position: center;
 	height: 100vh;
 }
 
@@ -393,6 +394,9 @@ responsive @586
 *******************/
 @media screen and (max-width: 620px) {
 
+	.hero-img {
+		height: 400px;
+	}
 	.catchcopy {
 		font-size: 3rem;
 		font-weight: 700;
