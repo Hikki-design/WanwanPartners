@@ -393,20 +393,23 @@ footer
 responsive @586
 *******************/
 @media screen and (max-width: 620px) {
-
-	.hero-img {
-		height: 700px;
+.hero-img {
+	height: 650px;
 	}
-	.catchcopy {
-		font-size: 2.8rem;
+
+.catchcopy {
+		font-size: 2.5rem;
 		font-weight: 700;
+		padding-top: 100px;
+
 		color: #fff;
 		letter-spacing: 0.1rem;
 		line-height: 1.1;
-		padding-top: 120px;
 		margin-bottom: 20px;
+}
+	h1 {
+		font-size: 1.6rem;
 	}
-	
 
 	nav,
 	nav p,
